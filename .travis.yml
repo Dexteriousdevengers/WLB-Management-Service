@@ -1,10 +1,10 @@
 language: csharp 
-solution: WLB Management Service.sln 
+solution: WLB_Management_Service.sln 
 install: 
-   - nuget restore WLB Management Service.sln 
+   - nuget restore WLB_Management_Service.sln 
    - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner 
 script: 
-  - xbuild /p:Configuration=Release WLB Management Service.sln 
-  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./WLB Management Service.Test/bin/Release/WLB Management Service.Test.dll
+  - xbuild /p:Configuration=Release WLB_Management_Service.sln 
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./WLB_Management_Service.Test/bin/Release/WLB_Management_Service.Test.dll
 
 
